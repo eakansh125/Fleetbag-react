@@ -301,7 +301,7 @@ footer {
 }
 
 .card:hover{
-    box-shadow: 1px 1px 10px 1px var(--hover-dark-grey);
+    box-shadow: 1px 1px 5px 1px var(--hover-dark-grey);
     cursor: pointer;
 }
 

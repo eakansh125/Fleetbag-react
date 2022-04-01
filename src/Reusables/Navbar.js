@@ -7,7 +7,7 @@ function Navbar() {
             <div class="nav-header-div-lt">
                 <Link className="text-dec-none font-bold margin-lr font-primary-color" to='/'>HOME</Link>
                 <Link class="text-dec-none font-bold margin-lr font-primary-color" to='/'>FILTER</Link>
-                <Link class="text-dec-none font-bold margin-lr font-primary-color" to="/">PRODUCTS</Link>
+                <Link class="text-dec-none font-bold margin-lr font-primary-color" to="/product">PRODUCTS</Link>
             </div>
             <div class="nav-header-div-mid">
                 <input class="input-outlined" type="text" placeholder="Search" />
