@@ -13,7 +13,7 @@ function Filter() {
                             <span>200</span>
                         </div>
                         <div className="slidecontainer">
-                            <input className="slider" type="range" min="1" max="100" value="50" />
+                            <input className="slider" type="range" min="1" max="100" defaultValue="50" />
                         </div>
                     </div>
                     <div className="filter-category flex-column margin-tb">
