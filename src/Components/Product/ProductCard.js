@@ -1,31 +1,27 @@
-import Navbar from "../../Reusables/Navbar";
-import './ProductListing.css'
+import './ProductListing.css';
 
 function ProductCard() {
   return (
-    <body>
-
-        
-                        <div class="card card-xs light-gray-shadow margin-tb relative">
-                            <div class="card-upper">
-                                <div class="image-vertical-xs">
+            <div className="card card-xs light-gray-shadow margin-tb relative">
+                            <div className="card-upper">
+                                <div className="image-vertical-xs">
                                     <img src="/img/pexels-ron-lach-10397680.jpg" alt="stadium" />
                                 </div>
-                                <div class="text align-center justify-bw">
-                                    <div class="text-heading flex-column align-center">
-                                        <p class="margin-no">WROGN Casuals</p>
-                                        <h3 class="font-bold font-xl margin-tb-xs">$200</h3>
+                                <div className="text align-center justify-bw">
+                                    <div className="text-heading flex-column align-center">
+                                        <p className="margin-no">WROGN Casuals</p>
+                                        <h3 className="font-bold font-xl margin-tb-xs">$200</h3>
                                     </div>
                                 </div>
                     
                             </div>
-                            <div class="card-lower ">
-                                <div class="card-footer-wishlist width-full">
-                                    <button class="btn-small width-full margin-no">ADD TO CART</button>
-                                    <button class="btn-text width-full margin-no">MOVE TO WISHLIST</button>
+                            <div className="card-lower ">
+                                <div className="card-footer-wishlist width-full">
+                                    <button className="btn-small width-full margin-no">ADD TO CART</button>
+                                    <button className="btn-text width-full margin-no">MOVE TO WISHLIST</button>
                                 </div>
                             </div>
-                            {/* <svg class="wishlist-badge absolute" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                            {/* <svg className="wishlist-badge absolute" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
                                 viewBox="0 0 172 172" style=" fill:#000000;">
                                 <g transform="">
                                     <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -165,11 +161,6 @@ function ProductCard() {
                                 </g>
                             </svg> */}
                         </div>
-                    
-                        
-                    
-
-    </body>
   );
 }
 
