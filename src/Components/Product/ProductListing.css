@@ -9,7 +9,7 @@
     min-width: 15.75rem;
     max-width: 15.75rem;
     height: 100%;
-    flex-grow: 0 !important;
+    flex-grow: 0;
 }
 
 .product-container {

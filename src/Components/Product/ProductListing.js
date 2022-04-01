@@ -1,6 +1,7 @@
 /* eslint-disable react/style-prop-object */
 import Filter from "./Filter";
 import ProductCard from "./ProductCard";
+
 import './ProductListing.css'
 
 function ProductListing() {

@@ -1,11 +1,6 @@
 import './App.css';
-import Home from './Components/Home/Home';
 import { Routes, Route } from "react-router-dom";
-import Login from './Components/Authentication/Login';
-import Signup from './Components/Authentication/Signup';
-import ProductListing from './Components/Product/ProductListing';
-import Navbar from './Reusables/Navbar';
-import Footer from './Reusables/Footer';
+import {Navbar, Footer, Home, Login, Signup, ProductListing} from "./ComponentImporter"
 
 
 function App() {
