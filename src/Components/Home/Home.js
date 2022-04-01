@@ -1,4 +1,3 @@
-import Navbar from '../../Reusables/Navbar';
 import Deals from './Deals';
 import Featured from './Featured';
 import './Home.css'
@@ -6,13 +5,13 @@ import './Home.css'
 function Home() {
   return (
     <body>
-    <Navbar />
-    <main class="main-view">
-        <div class="main-view-container">
+    
+    <main className="main-view">
+        <div className="main-view-container">
             
-            <div class="component-container">
+            <div className="component-container">
                 
-                <img class="img-full" src="/img/pexels-max-fischer-5872296.jpg" alt="banner" />
+                <img className="img-full" src="/img/pexels-max-fischer-5872296.jpg" alt="banner" />
             </div>
 
             <div className="component-container">
@@ -27,14 +26,9 @@ function Home() {
                     <img className='image-logos' src='https://inkbotdesign.com/wp-content/uploads/2012/09/Nike-Logo-Design.png' alt='nike-logo'/>
                     <img className='image-logos' src='https://www.pngall.com/wp-content/uploads/2016/06/Adidas-Logo-PNG.png' alt='adidas-logo'/>
                 </div>
-                
             </div>        
          </div>
     </main>
-    <footer>
-        <h4>Made with love<span class="font-primary-color"><i class="fa-solid fa-heart"></i></span> by Eakansh</h4>
-    </footer>
-
     <script src="https://kit.fontawesome.com/edf8601953.js" crossorigin="anonymous"></script>
 </body>
   );
