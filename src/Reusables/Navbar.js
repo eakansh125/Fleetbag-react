@@ -1,18 +1,21 @@
+import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
+
         <header className="nav-header">
         <div className="nav-header-div">
             <div className="nav-header-div-lt">
-                <a className="text-dec-none font-bold margin-lr font-primary-color" href="#top">HOME</a>
-                <a className="text-dec-none font-bold margin-lr font-primary-color" href="#top">FILTER</a>
-                <a className="text-dec-none font-bold margin-lr font-primary-color" href="#top">PRODUCTS</a>
+                <Link className="text-dec-none font-bold margin-lr font-primary-color" to='/'>HOME</Link>
+                <Link className="text-dec-none font-bold margin-lr font-primary-color" to='/'>FILTER</Link>
+                <Link className="text-dec-none font-bold margin-lr font-primary-color" to="/product">PRODUCTS</Link>
             </div>
             <div className="nav-header-div-mid">
                 <input className="input-outlined" type="text" placeholder="Search" />
             </div>
             <div className="nav-header-div-rt">   
-                        <a href="#top" className="btn-small margin-lr">Login</a>
+                        <Link to="/login" class="btn-small margin-lr">Login</Link>
+
 
                         <div className="badge-container margin-lr">
                             <a href="#top"><img
