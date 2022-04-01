@@ -1,4 +1,3 @@
-import Navbar from '../../Reusables/Navbar';
 import Deals from './Deals';
 import Featured from './Featured';
 import './Home.css'
