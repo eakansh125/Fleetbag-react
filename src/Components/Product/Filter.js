@@ -19,44 +19,44 @@ function Filter() {
                     <div className="filter-category flex-column margin-tb">
                         <h4 className="margin-tb-xs">Category</h4>
                         <div>
-                            <input type="checkbox" value="men" checked="checked" />
-                            <label for="Men clothing">Men clothing</label>
+                            <input type="checkbox" value="men" defaultChecked="checked" />
+                            <label htmlFor="Men clothing">Men clothing</label>
                         </div>
                         <div>
                             <input type="checkbox" value="women" />
-                            <label for="Women clothing">Women clothing</label>
+                            <label htmlFor="Women clothing">Women clothing</label>
                         </div>
                     
                     </div>
                     <div className="filter-rating flex-column margin-tb">
                         <h4 className="margin-tb-xs">Rating</h4>
                         <div>
-                            <input type="radio" name="rating" value="4" checked="checked" />
-                            <label for="4 stars">4 stars and above</label>
+                            <input type="radio" name="rating" value="4" defaultChecked="checked" />
+                            <label htmlFor="4 stars">4 stars and above</label>
                         </div>
                         <div>
                             <input type="radio" name="rating" value="3" />
-                            <label for="3 stars">3 stars and above</label>
+                            <label htmlFor="3 stars">3 stars and above</label>
                         </div>
                         <div>
                             <input type="radio" name="rating" value="2" />
-                            <label for="2 stars">2 stars and above</label>
+                            <label htmlFor="2 stars">2 stars and above</label>
                         </div>
                         <div>
                             <input type="radio" name="rating" value="1" />
-                            <label for="1 stars">1 star and above</label>
+                            <label htmlFor="1 stars">1 star and above</label>
                         </div>
                     
                     </div>
                     <div className="filter-sortby flex-column margin-tb">
                         <h4 className="margin-tb-xs">Sort by</h4>
                         <div>
-                            <input type="radio" name="sortby" checked="checked" value="hightolow" />
-                            <label for="high to low">Price - High to Low</label>
+                            <input type="radio" name="sortby" defaultChecked="checked" value="hightolow" />
+                            <label htmlFor="high to low">Price - High to Low</label>
                         </div>
                         <div>
                             <input type="radio" name="sortby" value="lowtohigh" />
-                            <label for="low to high">Price - Low to High</label>
+                            <label htmlFor="low to high">Price - Low to High</label>
                         </div>
                     
                     </div>
