@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useCart } from "../Context/cart-context";
 
 function Navbar() {
+    const {state:{cart}} = useCart();
     return (
 
         <header className="nav-header">
@@ -24,8 +26,8 @@ function Navbar() {
                         </div>
 
                         <div className="badge-container margin-lr">
-                            <a href="#top"><img src="https://img.icons8.com/ios/30/000000/add-shopping-cart--v1.png" alt="icons"/>
-                                <span className="badge-span">8</span></a>
+                            <Link to="/cart"><img src="https://img.icons8.com/ios/30/000000/add-shopping-cart--v1.png" alt="icons"/>
+                                <span className="badge-span">{cart.length}</span></Link>
                         </div> 
             </div>
         </div>

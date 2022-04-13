@@ -1,6 +1,7 @@
 import Deals from './Deals';
 import Featured from './Featured';
 import './Home.css'
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -16,9 +17,9 @@ function Home() {
 
             <div className="component-container">
                 <h1 className="medium-margin-top-bottom">FEATURED PRODUCTS</h1>
-                <Featured />  
+                <Link className='card-container text-dec-none' to="/product"><Featured /></Link>  
                 <h1 className="medium-margin-top-bottom">DEALS ON TOP BRANDS</h1>
-                <Deals />
+                <Link className='card-container text-dec-none' to="/product"><Deals /></Link>
                 <h1 className="medium-margin-top-bottom">TOP BRANDS</h1>
                 <div className='logo-container'>
                 <img className='image-logos' src='https://images.yourstory.com/cs/wordpress/2017/05/Wrogn-01.jpg' alt='wrogn-logo'/>

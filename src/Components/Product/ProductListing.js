@@ -1,5 +1,5 @@
 /* eslint-disable react/style-prop-object */
-import { useState,useEffect } from "react";
+import FetchProducts from "../../Fetch/FetchProducts";
 import Filter from "./Filter";
 import ProductCard from "./ProductCard";
 
@@ -7,27 +7,8 @@ import ProductCard from "./ProductCard";
 import './ProductListing.css'
 
 function ProductListing() {
-    
-    useEffect(() => {
-      fetchProducts()
-    }, [])
-    
-    const [products,setProducts] = useState([]);
 
-     const fetchProducts = async () => {
-          const axios = require('axios');
-         try {
-                const res = await axios.get("api/products")
-                const prod = res?.data?.products
-                console.log(prod)
-                setProducts(prod)
-                
-             }
-             
-         catch(e) {
-             console.log("In exception: ",e)
-         }
-     }
+    const products = FetchProducts();
     
   return (
         <main className="main-view">
@@ -44,7 +25,7 @@ function ProductListing() {
                     <div className="product-item-container flex-row align-center justify-bw">
                         
                         {
-                            products.map(prod => <ProductCard title={prod.title} price={prod.price}/>)
+                            products.map(prod => <ProductCard prod={prod}/>) 
                         }
                         
                     </div>
