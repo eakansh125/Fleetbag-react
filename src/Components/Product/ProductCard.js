@@ -1,6 +1,8 @@
+import { useCart } from '../../Context/cart-context';
 import './ProductListing.css';
 
-function ProductCard({title, price}) {
+function ProductCard({prod}) { 
+    const {state: {cart}, dispatch} = useCart();
   return (
             <div className="card card-xs light-gray-shadow margin-tb relative">
                             <div className="card-upper">
@@ -9,15 +11,30 @@ function ProductCard({title, price}) {
                                 </div>
                                 <div className="text align-center justify-bw">
                                     <div className="text-heading flex-column align-center">
-                                        <p className="margin-no">{title}</p>
-                                        <h3 className="font-bold font-xl margin-tb-xs">${price}</h3>
+                                        <p className="margin-no">{prod.title}</p>
+                                        <h3 className="font-bold font-xl margin-tb-xs">${prod.price}</h3>
                                     </div>
                                 </div>
                     
                             </div>
                             <div className="card-lower ">
                                 <div className="card-footer-wishlist width-full">
-                                    <button className="btn-small width-full margin-no">ADD TO CART</button>
+                                {
+                                    cart.some(p=>p.id === prod.id) ? 
+                                    (<button onClick={() => {
+                                        dispatch({
+                                            type: "REMOVE_FROM_CART",
+                                            payload: prod
+                                        })
+                                    }} className="btn-small width-full margin-no">REMOVE FROM CART</button>) :
+                                    (<button onClick={() => {
+                                        dispatch({
+                                            type: "ADD_TO_CART",
+                                            payload: prod
+                                        })
+                                    }} className="btn-small width-full margin-no">ADD TO CART</button>)
+                                }
+                                    
                                     <button className="btn-text width-full margin-no">MOVE TO WISHLIST</button>
                                 </div>
                             </div>

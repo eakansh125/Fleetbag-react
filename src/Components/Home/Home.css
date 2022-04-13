@@ -79,6 +79,14 @@ footer {
     margin: 0.5rem 0;
 }
 
+.padding-s{
+    padding: 2rem;
+}
+
+.padding-m {
+    padding: 4rem;
+}
+
 .padding-no{
     padding: 0;
 }
@@ -107,6 +115,11 @@ footer {
 .width-full{
     width: 100%;
 }
+
+.background-lightgrey{
+    background-color: var(--secondary-grey);
+}
+
 
 /* Nav */
 
