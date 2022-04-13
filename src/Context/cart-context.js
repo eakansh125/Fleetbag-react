@@ -4,7 +4,7 @@ import { cartReducer } from "./cart-reducer"
 
 const CartContext = createContext()
 
-const CartProvider = ({children}) => {
+const CartContextProvider = ({children}) => {
 
   const [state, dispatch] = useReducer(cartReducer, {
     products: products,
@@ -15,4 +15,4 @@ const CartProvider = ({children}) => {
 
 export const useCart = () => useContext(CartContext)
 
-export default CartProvider
+export default CartContextProvider
