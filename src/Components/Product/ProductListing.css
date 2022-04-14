@@ -47,3 +47,7 @@
     background: var(--secondary-grey);
     cursor: pointer;
 }
+
+.button-hovergrey{
+    background-color: var(--hover-grey);
+}

@@ -2,17 +2,18 @@ import {createContext, useContext, useReducer} from "react"
 import { products } from "../backend/db/products"
 import { cartReducer } from "./cart-reducer"
 
-const CartContext = createContext()
+const CartWishlistContext = createContext()
 
-const CartContextProvider = ({children}) => {
+const CartWishlistContextProvider = ({children}) => {
 
   const [state, dispatch] = useReducer(cartReducer, {
     products: products,
-    cart: []
+    cart: [],
+    wishlist: []
   })
-  return <CartContext.Provider value={{state, dispatch}}>{children}</CartContext.Provider>
+  return <CartWishlistContext.Provider value={{state, dispatch}}>{children}</CartWishlistContext.Provider>
 }
 
-export const useCart = () => useContext(CartContext)
+export const useCartWishlist = () => useContext(CartWishlistContext)
 
-export default CartContextProvider
+export default CartWishlistContextProvider

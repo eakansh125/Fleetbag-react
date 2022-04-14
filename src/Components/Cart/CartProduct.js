@@ -1,8 +1,8 @@
-import { useCart } from "../../Context/cart-context"
+import { useCartWishlist } from "../../Context/cart-context"
 
 
 function CartProduct({product, discount}) {
-    const { dispatch} = useCart();
+    const { dispatch} = useCartWishlist();
     return (
          <div className="cart-item flex-row margin-tb">
                             <div className="cart-item-image-container">
@@ -34,7 +34,12 @@ function CartProduct({product, discount}) {
                                             payload: product
                                         })
                                     }} className="btn-small width-full">REMOVE FROM CART</button>
-                                    <button className="btn-small btn-outlined width-full margin-tb">MOVE TO WISHLIST</button>
+                                    <button onClick={() => {
+                                        dispatch({
+                                            type: "CART_TO_WISHLIST",
+                                            payload: product
+                                        })
+                                    }} className="btn-small btn-outlined width-full margin-tb">MOVE TO WISHLIST</button>
                                 </div>
                             </div>
                         </div>
