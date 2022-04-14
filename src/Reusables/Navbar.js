@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import { useCart } from "../Context/cart-context";
+import { useCartWishlist } from "../Context/cart-context";
 
 function Navbar() {
-    const {state:{cart}} = useCart();
+    const {state:{cart,wishlist}} = useCartWishlist();
     return (
 
         <header className="nav-header">
@@ -20,9 +20,9 @@ function Navbar() {
 
 
                         <div className="badge-container margin-lr">
-                            <a href="#top"><img
+                            <Link to="/wishlist"><img
                                 src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/30/000000/external-like-instagram-flatart-icons-outline-flatarticons.png" alt="icons"/>
-                            <span className="badge-span">6</span></a>
+                            <span className="badge-span">{wishlist.length}</span></Link>
                         </div>
 
                         <div className="badge-container margin-lr">

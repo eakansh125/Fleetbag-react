@@ -63,6 +63,10 @@ footer {
     justify-content: space-between;
 }
 
+.justify-ev{
+    justify-content: space-evenly;
+}
+
 .margin-lr{
     margin: 0 3rem;
 }
@@ -120,6 +124,12 @@ footer {
     background-color: var(--secondary-grey);
 }
 
+.page-empty {
+    height: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Nav */
 
